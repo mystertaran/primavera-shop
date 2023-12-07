@@ -1,8 +1,8 @@
 {
     "remotePath": "./",
-    "host": "ashiv3r.hostingasp.pl hosting",
-    "username": "primavera login",
-    "password": "PrimaverA1!@#$ password",
+    "host": "hosting",
+    "username": "login",
+    "password": "password",
     "port": 21,
     "secure": false,
     "protocol": "ftp",
