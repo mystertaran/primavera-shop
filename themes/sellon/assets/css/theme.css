@@ -14501,4 +14501,37 @@ body {
       }
 }
 
+
+/* About-us */
+
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-us-text-column {
+    flex: 1;
+  }
+  
+  .about-us-text-content {
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    z-index: 1; 
+  }
+  
+  .about-us-image-column {
+    flex-shrink: 0;
+    margin-left: 20px; 
+  }
+  
+  .about-us-image-column img {
+    width: 100%; 
+    object-fit: cover; 
+    max-height: 400px; 
+  }
+
 /*# sourceMappingURL=theme.css.map*/
