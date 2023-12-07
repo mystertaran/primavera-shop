@@ -9782,18 +9782,23 @@ section.homeSlide .hsContainer .button:hover {
 }
 
 .thumbnail-container img {
-    width: 100%; /* wypełnij całą szerokość bloku */
-    height: 750px; /* wypełnij całą wysokość bloku */
-    object-fit: cover; /* skaluj obraz, aby wypełnić kontener */
+    width: 100%;
+    /* wypełnij całą szerokość bloku */
+    height: 750px;
+    /* wypełnij całą wysokość bloku */
+    object-fit: cover;
+    /* skaluj obraz, aby wypełnić kontener */
     object-position: center;
 }
 
 @media (max-width: 768px) {
     .thumbnail-container img {
-    height: 350px;
-    width: 100%; /* wypełnij całą szerokość bloku */
-    object-fit: cover; /* skaluj obraz, aby wypełnić kontener */
-    object-position: center;
+        height: 350px;
+        width: 100%;
+        /* wypełnij całą szerokość bloku */
+        object-fit: cover;
+        /* skaluj obraz, aby wypełnić kontener */
+        object-position: center;
     }
 }
 
@@ -11846,7 +11851,8 @@ section.homeSlide .hsContainer .button:hover {
     content: " ";
     display: block;
     height: 100%;
-    width: 8px; /* Szerokość wykończenia z lewej strony */
+    width: 8px;
+    /* Szerokość wykończenia z lewej strony */
     position: absolute;
 }
 
@@ -11867,7 +11873,8 @@ section.homeSlide .hsContainer .button:hover {
     bottom: 13px;
     right: 0;
     content: " ";
-    width: 8px; /* Szerokość szczałki z prawej strony */
+    width: 8px;
+    /* Szerokość szczałki z prawej strony */
     height: 100%;
     position: absolute;
 }
@@ -14446,59 +14453,61 @@ body {
     align-items: center;
     padding: 0 20px;
     font-size: 14px;
-  }
-  
-  /* Sekcja z informacjami kontaktowymi */
-  .contact-info {
+}
+
+/* Sekcja z informacjami kontaktowymi */
+.contact-info {
     display: flex;
     align-items: center;
-  }
-  
-  .write-to-us {
-    color: white!important;
+}
+
+.write-to-us {
+    color: white !important;
     font-weight: bold;
     margin-right: 10px;
     margin-left: 10px;
     text-decoration: none;
     /* transition: font-size 0.2s ease-in-out; */
-  }
-  
-  .write-to-us:hover {
+}
+
+.write-to-us:hover {
     font-size: 110%;
-  }
-  
-  .phone {
-    color: white!important;
+}
+
+.phone {
+    color: white !important;
     font-weight: bold;
     text-decoration: none;
-  }
-  
-  .opening-hours {
+}
+
+.opening-hours {
     color: white;
     margin-left: 20px;
-  }
-  
-  /* Sekcja z informacjami o płatnościach */
-  .payment-info {
+}
+
+/* Sekcja z informacjami o płatnościach */
+.payment-info {
     display: flex;
-    align-items: center; /* Dodane, aby elementy były w jednym wierszu */
-  }
-  
-  .payment-info span {
+    align-items: center;
+    /* Dodane, aby elementy były w jednym wierszu */
+}
+
+.payment-info span {
     color: white;
     margin-bottom: 5px;
-  }
+}
 
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+
     .opening-hours,
     .payment-info {
-      display: none;
+        display: none;
     }
 
     .additional-header {
         justify-content: center;
         text-align: center;
-      }
+    }
 }
 
 
@@ -14506,32 +14515,46 @@ body {
 
 .about-us-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-left: 200px;
+    position: relative;
+    width: 100%;
     padding: 20px;
-  }
-  
-  .about-us-text-column {
-    flex: 1;
-  }
-  
-  .about-us-text-content {
+}
+
+.about-us-text-column {
+    width: 30%;
+    float: left;
+    margin-right: -30px;
+}
+
+.about-us-text-content {
     background-color: white;
     color: black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    z-index: 1; 
-  }
-  
-  .about-us-image-column {
-    flex-shrink: 0;
-    margin-left: 20px; 
-  }
-  
-  .about-us-image-column img {
-    width: 100%; 
-    object-fit: cover; 
-    max-height: 400px; 
-  }
+    z-index: 1;
+    position: relative;
+}
+
+.about-us-text-content h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #D4D4D4
+}
+
+.about-us-image-column {
+    width: 40%;
+    float: left;
+}
+
+.about-us-image-column img {
+    width: auto;
+    object-fit: cover;
+    max-height: 746px;
+}
 
 /*# sourceMappingURL=theme.css.map*/
