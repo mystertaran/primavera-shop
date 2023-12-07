@@ -1,0 +1,70 @@
+.search-widget {
+  float: left;
+  width: 80%;
+  margin-top:20px;
+  @include search-box;
+}
+.header-top {
+  .search-widget {
+    form {
+      input[type="text"] {
+        min-width: inherit;
+        width: 100%;
+        background: #f7f7f7;
+        border: $base-border;
+        @include border-radius(3px);
+        overflow: hidden;
+        font-size: 14px;
+        padding-left: 32px; 
+        outline: none !important;
+      }
+      button[type=submit]{
+	    left: 5px;
+	    right: inherit;
+	      i{
+		      color: $brand-primary;
+	      }
+      }
+    }
+  }
+}
+#checkout {
+  #search_widget {
+    display: none; /* Not ideal solution by allows to reuse same hooks/templates */
+  }
+}
+
+#pagenotfound {
+  .page-content {
+    #search_widget {
+      width: 100%;
+    }
+  }
+}
+
+.page-not-found {
+  .search-widget {
+    form {
+      display: inline-block;
+    }
+  }
+}
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+  .header-top {
+    .search-widget {
+      float: none;
+      padding: 0 rem(15px);
+      width: 100%;
+      margin-bottom: rem(20px);
+      form {
+        margin: 0 auto;
+        input[type="text"] {
+          min-width: inherit;
+          background: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/belvg/public_html/helen/prestashop_themes/p17/foodbox/themes/foodbox/modules/ps_bestsellers/views/templates/hook/ps_bestsellers.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="d7b2933ba512ada478c97fa43dd7ebe6">
+        <source>Best Sellers</source>
+        <target>Best Sellers</target>
+        <note>Context:
+File: /var/www/belvg/public_html/helen/prestashop_themes/p17/foodbox/themes/foodbox/modules/ps_bestsellers/views/templates/hook/ps_bestsellers.tpl:25</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
