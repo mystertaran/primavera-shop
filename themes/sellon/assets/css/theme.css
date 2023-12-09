@@ -8140,12 +8140,11 @@ button.swiper-pagination-bullet {
     }
 
     .header-top .search-widget form {
-        margin: 0 auto;
+        margin: 20px auto;
         width: 100%
     }
 
     .header-top .search-widget form input[type=text] {
-        margin-top: 20px;
         min-width: inherit;
         background: #fff;
         border-bottom: 0 !important;
@@ -8158,6 +8157,7 @@ button.swiper-pagination-bullet {
         left: -9px;
         top: 12px;
     }
+    
 }
 
 .top-menu[data-depth="1"] {
