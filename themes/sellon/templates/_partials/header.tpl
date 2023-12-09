@@ -59,12 +59,12 @@
 {block name='header_top'}
 {hook h='displayColumnsconfigurator'}
     <div class="header-top">
-    <div class="container-fluid">
+    <div class="container-fluid test-align">
        <div class="row">
         <div class="col-md-12 col-sm-12 position-static">
           <div class="row">
 	          <div class="header-top__inner">
-	          <div class="col-md-4" >  
+	          <div class="col-md-4 header-top__inner_class">  
 	          {hook h='displaySearch'}
 	          </div>
 	        <div class="col-md-4 hidden-sm-down" id="_desktop_logo">
