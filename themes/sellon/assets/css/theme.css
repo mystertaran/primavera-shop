@@ -8101,9 +8101,14 @@ button.swiper-pagination-bullet {
 }
 
 .header-top .search-widget form button[type=submit] {
+    position: absolute;
+    top: 36%;
+    transform: translateY(-50%);
     left: 5px;
     right: inherit
 }
+
+
 
 .header-top .search-widget form button[type=submit] i {
     color: #121212;
@@ -8140,6 +8145,7 @@ button.swiper-pagination-bullet {
     }
 
     .header-top .search-widget form input[type=text] {
+        margin-top: 20px;
         min-width: inherit;
         background: #fff;
         border-bottom: 0 !important;
@@ -8147,7 +8153,10 @@ button.swiper-pagination-bullet {
     }
 
     .header-top .search-widget form button[type=submit] i {
-        display: inline-block
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top: -30px;
     }
 }
 
