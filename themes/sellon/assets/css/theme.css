@@ -8154,9 +8154,9 @@ button.swiper-pagination-bullet {
 
     .header-top .search-widget form button[type=submit] i {
         display: inline-block;
-        position: absolute;
-        left: 0px;
-        top: -30px;
+        position: relative;
+        left: -9px;
+        top: -27px;
     }
 }
 
