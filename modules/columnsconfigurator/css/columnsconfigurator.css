@@ -68,10 +68,7 @@
 	}	
 }  
 @media (max-width: 480px){
-	#products .products .product-miniature,
-	.products .product-miniature{
-		width: 100% !important;
-	}	
+
 	#products .products {
 		margin: 0px;
 	}

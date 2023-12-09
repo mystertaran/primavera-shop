@@ -9775,13 +9775,13 @@ section.homeSlide .hsContainer .button:hover {
 .products .product-title a,
 .slider-products .product-title a {
     color: #000;
-    font-size: .875rem;
+    font-size: .975rem;
     text-decoration: none;
     text-align: left;
     font-weight: 400;
     width: calc(100% - 160px);
     display: inline-block;
-    float: left
+    float: left;
 }
 
 #products .thumbnail-container,
@@ -9799,21 +9799,16 @@ section.homeSlide .hsContainer .button:hover {
 
 .thumbnail-container img {
     width: 100%;
-    /* wypełnij całą szerokość bloku */
-    height: 750px;
-    /* wypełnij całą wysokość bloku */
+    height: 600px;
     object-fit: cover;
-    /* skaluj obraz, aby wypełnić kontener */
     object-position: center;
 }
 
 @media (max-width: 768px) {
     .thumbnail-container img {
-        height: 350px;
+        height: 200px;
         width: 100%;
-        /* wypełnij całą szerokość bloku */
         object-fit: cover;
-        /* skaluj obraz, aby wypełnić kontener */
         object-position: center;
     }
 }
@@ -9931,8 +9926,8 @@ section.homeSlide .hsContainer .button:hover {
 .products .product-price-and-shipping,
 .slider-products .product-price-and-shipping {
     color: #000;
-    font-weight: 600;
-    font-size: .875rem;
+    font-weight: 700;
+    font-size: .975rem;
     text-align: left;
     padding-top: 0;
     float: right
@@ -10127,6 +10122,35 @@ section.homeSlide .hsContainer .button:hover {
     padding: 10px;
     /* height: 0;
     line-height: 0 */
+}
+
+@media (max-width: 768px) {
+    #products .product-miniature .discount,
+    #products .product-miniature .on-sale,
+    #products .product-miniature .online-only,
+    #products .product-miniature .product-flags .new,
+    .featured-products .product-miniature .discount,
+    .featured-products .product-miniature .on-sale,
+    .featured-products .product-miniature .online-only,
+    .featured-products .product-miniature .product-flags .new,
+    .product-accessories .product-miniature .discount,
+    .product-accessories .product-miniature .on-sale,
+    .product-accessories .product-miniature .online-only,
+    .product-accessories .product-miniature .product-flags .new,
+    .product-miniature .product-miniature .discount,
+    .product-miniature .product-miniature .on-sale,
+    .product-miniature .product-miniature .online-only,
+    .product-miniature .product-miniature .product-flags .new,
+    .products .product-miniature .discount,
+    .products .product-miniature .on-sale,
+    .products .product-miniature .online-only,
+    .products .product-miniature .product-flags .new,
+    .slider-products .product-miniature .discount,
+    .slider-products .product-miniature .on-sale,
+    .slider-products .product-miniature .online-only,
+    .slider-products .product-miniature .product-flags .new {
+        top: 5px !important;
+    }
 }
 
 #products .product-miniature .discount.new:before,
