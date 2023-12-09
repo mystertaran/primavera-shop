@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>belvgcustomhtml</name>
+    <displayName><![CDATA[BELVG Custom Html]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Adds Html blocks to hook]]></description>
+    <author><![CDATA[BelVG]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Are you sure that you want to delete your HTML blocks?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

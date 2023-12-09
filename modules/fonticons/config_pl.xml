@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>fonticons</name>
+    <displayName><![CDATA[Font awesome + Material icons]]></displayName>
+    <version><![CDATA[1.2.3]]></version>
+    <description><![CDATA[Module allows to add support of font awesome and/or material icons to templates, where these iconsets are not available]]></description>
+    <author><![CDATA[MyPresta.eu]]></author>
+    <tab><![CDATA[other]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

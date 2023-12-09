@@ -1,0 +1,72 @@
+/**
+ * Copyright 2021-2023 InPost S.A.
+ *
+ * NOTICE OF LICENSE
+ *
+ * Licensed under the EUPL-1.2 or later.
+ * You may not use this work except in compliance with the Licence.
+ *
+ * You may obtain a copy of the Licence at:
+ * https://joinup.ec.europa.eu/software/page/eupl
+ * It is also bundled with this package in the file LICENSE.txt
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the Licence is distributed on an AS IS basis,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the Licence for the specific language governing permissions
+ * and limitations under the Licence.
+ *
+ * @author    InPost S.A.
+ * @copyright 2021-2023 InPost S.A.
+ * @license   https://joinup.ec.europa.eu/software/page/eupl
+ */
+@media (min-width:768px) {
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+#new-dispatch-point-data {
+  border: 1px solid #c7d6db;
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media print{
+  .d-md-block.d-print-none {
+    display: none !important;
+  }
+}
+
+.inpost-locker-address{
+  margin-top: 1rem;
+}
+
+#inpost-shipping-map-modal {
+  z-index: 1100;
+}
+
+#inpost-shipping-map-modal .modal-content {
+  height: 100%;
+}
+
+#inpost-shipping-map-modal .modal-header, #inpost-shipping-map-modal .modal-footer {
+  display: none;
+}
+
+#inpost-shipping-map-modal .modal-body {
+  padding: unset;
+}
+
+.inpost-shipping-map-modal {
+  width: 90%;
+  height: 85%;
+  max-width: 90%;
+}
+
+.inpost-shipping-map-modal-content {
+  width: 100%;
+  height: 100%;
+}

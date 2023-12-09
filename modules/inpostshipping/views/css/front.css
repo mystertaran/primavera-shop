@@ -1,0 +1,134 @@
+/**
+ * Copyright 2021-2023 InPost S.A.
+ *
+ * NOTICE OF LICENSE
+ *
+ * Licensed under the EUPL-1.2 or later.
+ * You may not use this work except in compliance with the Licence.
+ *
+ * You may obtain a copy of the Licence at:
+ * https://joinup.ec.europa.eu/software/page/eupl
+ * It is also bundled with this package in the file LICENSE.txt
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the Licence is distributed on an AS IS basis,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the Licence for the specific language governing permissions
+ * and limitations under the Licence.
+ *
+ * @author    InPost S.A.
+ * @copyright 2021-2023 InPost S.A.
+ * @license   https://joinup.ec.europa.eu/software/page/eupl
+ */
+.inpost-shipping-container{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  background-color: #f6f6f6;
+}
+
+.inpost-shipping-button{
+  color: #3c3c3c;
+  font-weight: 600;
+  background-color: #ffcd00;
+  border-color: #ffcd00;
+}
+
+.inpost-shipping-button:hover,
+.inpost-shipping-button:focus,
+.inpost-shipping-button.focus{
+  color: #3c3c3c;
+  background-color: #ff7615;
+  border-color: #ff7615;
+}
+
+.inpost-shipping-machine-info.hidden{
+  display: none;
+}
+
+.inpost-shipping-machine-info{
+  line-height: 20px;
+}
+
+.inpost-shipping-machine-name{
+  margin-bottom: 0;
+  color: #3c3c3c;
+  font-size: 14px;
+}
+
+.inpost-shipping-machine-address{
+  color: #3c3c3c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.box .inpost-shipping-machine-address{
+  margin-bottom: 1rem;
+}
+
+.inpost-shipping-subheader{
+  margin-bottom: 0;
+  color: #3c3c3c;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.inpost-shipping-label{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.easypack-widget .map-list-row{
+  background-color: white;
+}
+
+.inpost-shipping-customer{
+  margin-bottom: 0;
+  color: #3c3c3c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.inpost-shipping-machine-customer-info{
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px){
+  .inpost-shipping-machine-customer-info{
+    margin-top: 0;
+  }
+}
+
+.inpost-shipping-machine-customer-info.hidden{
+  display: none;
+}
+
+.inpost-shipping-customer-change-wrapper{
+  margin-bottom: 0;
+  text-align: right;
+  line-height: 1;
+}
+
+.inpost-shipping-customer-change{
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.inpost-shipping-customer-change-form{
+  padding-top: 20px;
+  display: none;
+}
+
+html .modal .inpost-shipping-map-modal {/* NESTING TO MAKE SURE THAT WE OVERRIDE THEME STYLES */
+  width: 90%;
+  height: 90%;
+  max-width: 90%;
+  margin: 5vh auto;
+}
+
+html .modal .inpost-shipping-map-modal-content { /* NESTING TO MAKE SURE THAT WE OVERRIDE THEME STYLES */
+  width: 100%;
+  height: 100%;
+  display: block;
+}

@@ -1,0 +1,418 @@
+imports:
+  - { resource: ../common.yml }
+
+services:
+  inpost.shipping.adapter.link:
+    class: InPost\Shipping\Adapter\LinkAdapter
+    public: true
+    autowire: true
+
+  InPost\Shipping\Adapter\LinkAdapter: '@inpost.shipping.adapter.link'
+
+  inpost.shipping.configuration.sending:
+    class: InPost\Shipping\Configuration\SendingConfiguration
+    public: true
+
+  InPost\Shipping\Configuration\SendingConfiguration:
+    alias: inpost.shipping.configuration.sending
+    public: true
+
+  inpost.shipping.store.module.configuration:
+    class: InPost\Shipping\Presenter\Store\Modules\ConfigurationModule
+    public: false
+    autowire: true
+
+  inpost.shipping.store.module.context:
+    class: InPost\Shipping\Presenter\Store\Modules\ContextModule
+    public: false
+    autowire: true
+
+  inpost.shipping.store.module.organization:
+    class: InPost\Shipping\Presenter\Store\Modules\OrganizationModule
+    public: true
+    autowire: true
+
+  inpost.shipping.store.module.services:
+    class: InPost\Shipping\Presenter\Store\Modules\ServicesModule
+    public: false
+    autowire: true
+
+  inpost.shipping.store.module.carriers:
+    class: InPost\Shipping\Presenter\Store\Modules\CarriersModule
+    public: false
+    autowire: true
+
+  inpost.shipping.store.presenter:
+    class: InPost\Shipping\Presenter\Store\StorePresenter
+    public: true
+    arguments:
+      $modules:
+        - '@inpost.shipping.store.module.configuration'
+        - '@inpost.shipping.store.module.context'
+        - '@inpost.shipping.store.module.organization'
+        - '@inpost.shipping.store.module.services'
+        - '@inpost.shipping.store.module.carriers'
+
+  InPost\Shipping\Translations\Translations:
+    class: InPost\Shipping\Translations\Translations
+    public: false
+    autowire: true
+
+  inpost.shipping.translations.validation_errors:
+    class: InPost\Shipping\Translations\ValidationErrorTranslator
+    public: false
+    autowire: true
+
+  InPost\Shipping\Translations\ValidationErrorTranslator: '@inpost.shipping.translations.validation_errors'
+
+  inpost.shipping.translations.sending_method:
+    class: InPost\Shipping\Translations\SendingMethodTranslator
+    public: true
+    autowire: true
+
+  InPost\Shipping\Translations\SendingMethodTranslator: '@inpost.shipping.translations.sending_method'
+
+  inpost.shipping.translations.shipping_service:
+    class: InPost\Shipping\Translations\ShippingServiceTranslator
+    public: true
+    autowire: true
+
+  InPost\Shipping\Translations\ShippingServiceTranslator: '@inpost.shipping.translations.shipping_service'
+
+  inpost.shipping.translations.dimension_template:
+    class: InPost\Shipping\Translations\DimensionTemplateTranslator
+    public: true
+    autowire: true
+
+  InPost\Shipping\Translations\DimensionTemplateTranslator: '@inpost.shipping.translations.dimension_template'
+
+  InPost\Shipping\Translations\WeekdayTranslator:
+    class: InPost\Shipping\Translations\WeekdayTranslator
+    public: false
+    autowire: true
+
+  InPost\Shipping\Translations\FieldTranslator:
+    class: InPost\Shipping\Translations\FieldTranslator
+    public: false
+    autowire: true
+
+  inpost.shipping.presenter.carrier:
+    class: InPost\Shipping\Presenter\CarrierPresenter
+    public: true
+    autowire: true
+
+  InPost\Shipping\Presenter\CarrierPresenter: '@inpost.shipping.presenter.carrier'
+
+  InPost\Shipping\Presenter\ShipmentPresenter:
+    class: InPost\Shipping\Presenter\ShipmentPresenter
+    public: true
+    autowire: true
+
+  InPost\Shipping\Presenter\ShipmentStatusPresenter:
+    class: InPost\Shipping\Presenter\ShipmentStatusPresenter
+    public: false
+
+  inpost.shipping.presenter.dispatch_point:
+    class: InPost\Shipping\Presenter\DispatchPointPresenter
+    public: true
+
+  InPost\Shipping\Presenter\DispatchPointPresenter: '@inpost.shipping.presenter.dispatch_point'
+
+  inpost.shipping.validator.api_configuration:
+    class: InPost\Shipping\Validator\ApiConfigurationValidator
+    public: true
+    autowire: true
+
+  inpost.shipping.validator.geo_widget_configuration:
+    class: InPost\Shipping\Validator\GeoWidgetConfigurationValidator
+    public: true
+    autowire: true
+
+  InPost\Shipping\Validator\AddressValidator:
+    class: InPost\Shipping\Validator\AddressValidator
+    public: false
+    autowire: true
+
+  inpost.shipping.validator.sender:
+    class: InPost\Shipping\Validator\SenderValidator
+    public: true
+    autowire: true
+
+  inpost.shipping.validator.weekend_delivery_configuration:
+    class: InPost\Shipping\Validator\WeekendDeliveryConfigurationValidator
+    public: true
+    autowire: true
+
+  InPost\Shipping\Validator\ShipmentDimensionsValidator:
+    class: InPost\Shipping\Validator\ShipmentDimensionsValidator
+    public: false
+    autowire: true
+
+  inpost.shipping.validator.orders_configuration:
+    class: InPost\Shipping\Validator\OrdersConfigurationValidator
+    public: true
+    autowire: true
+
+  inpost.shipping.validator.module_controllers:
+    class: InPost\Shipping\Validator\ModuleControllersValidator
+    public: true
+    autowire: true
+
+  InPost\Shipping\DataProvider\OrganizationDataProvider:
+    class: InPost\Shipping\DataProvider\OrganizationDataProvider
+    public: false
+    autowire: true
+
+  inpost.shipping.data_provider.order_shipments:
+    class: InPost\Shipping\DataProvider\OrderShipmentsDataProvider
+    public: true
+    autowire: true
+
+  InPost\Shipping\DataProvider\CarrierDataProvider:
+    class: InPost\Shipping\DataProvider\CarrierDataProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\DataProvider\OrderDimensionsDataProvider:
+    class: InPost\Shipping\DataProvider\OrderDimensionsDataProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\DataProvider\TemplateDimensionsDataProvider:
+    class: InPost\Shipping\DataProvider\TemplateDimensionsDataProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\SendingMethodChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\SendingMethodChoiceProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\DispatchPointChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\DispatchPointChoiceProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\CarrierChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\CarrierChoiceProvider
+    public: false
+
+  InPost\Shipping\ChoiceProvider\ShippingServiceChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\ShippingServiceChoiceProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\DimensionTemplateChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\DimensionTemplateChoiceProvider
+    autowiring_types: InPost\Shipping\ChoiceProvider\DimensionTemplateChoiceProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\WeekdayChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\WeekdayChoiceProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\ShipmentLabelTypeChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\ShipmentLabelTypeChoiceProvider
+    public: false
+
+  InPost\Shipping\ChoiceProvider\ShipmentLabelFormatChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\ShipmentLabelFormatChoiceProvider
+    public: false
+
+  InPost\Shipping\ChoiceProvider\ShipmentReferenceFieldChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\ShipmentReferenceFieldChoiceProvider
+    public: false
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\OrderStateChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\OrderStateChoiceProvider
+    public: false
+    autowire: true
+
+  inpost.shipping.choice_provider.product_template:
+    class: InPost\Shipping\ChoiceProvider\ProductTemplateChoiceProvider
+    public: true
+    autowire: true
+
+  InPost\Shipping\ChoiceProvider\ModuleChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\ModuleChoiceProvider
+    public: false
+
+  InPost\Shipping\ChoiceProvider\ModulePageChoiceProvider:
+    class: InPost\Shipping\ChoiceProvider\ModulePageChoiceProvider
+    public: false
+
+  inpost.shipping.install.installer:
+    class: InPost\Shipping\Install\Installer
+    public: true
+    arguments:
+      $subInstallers:
+        - '@inpost.shipping.install.hooks'
+        - '@inpost.shipping.install.tabs'
+        - '@inpost.shipping.install.carriers'
+        - '@inpost.shipping.install.database'
+        - '@inpost.shipping.install.configuration'
+
+  inpost.shipping.install.hooks:
+    class: InPost\Shipping\Install\Hooks
+    public: false
+    autowire: true
+
+  InPost\Shipping\Install\Hooks:
+    alias: inpost.shipping.install.hooks
+    public: true
+
+  inpost.shipping.install.tabs:
+    class: InPost\Shipping\Install\Tabs
+    public: false
+    autowire: true
+
+  inpost.shipping.install.database:
+    class: InPost\Shipping\Install\Database
+    public: false
+    autowire: true
+
+  InPost\Shipping\Install\Database:
+    alias: inpost.shipping.install.database
+    public: true
+
+  inpost.shipping.install.carriers:
+    class: InPost\Shipping\Install\Carriers
+    public: true
+    autowire: true
+
+  inpost.shipping.install.configuration:
+    class: InPost\Shipping\Install\Configuration
+    public: false
+    arguments:
+      $configurations:
+        - '@inpost.shipping.configuration.shipx'
+        - '@inpost.shipping.configuration.sending'
+        - '@inpost.shipping.configuration.szybkie_zwroty'
+        - '@inpost.shipping.configuration.carriers'
+        - '@inpost.shipping.configuration.orders'
+        - '@inpost.shipping.configuration.shop'
+
+  InPost\Shipping\CarrierUpdater:
+    class: InPost\Shipping\CarrierUpdater
+    public: false
+    autowire: true
+
+  InPost\Shipping\CarrierConfigurationUpdater:
+    class: InPost\Shipping\CarrierConfigurationUpdater
+    public: false
+    autowire: true
+
+  inpost.shipping.handler.product_update:
+    class: InPost\Shipping\Handler\ProductUpdateHandler
+    public: true
+    autowire: true
+
+  InPost\Shipping\Helper\DefaultShipmentReferenceExtractor:
+    class: InPost\Shipping\Helper\DefaultShipmentReferenceExtractor
+    public: false
+    autowire: true
+
+  InPost\Shipping\Helper\ParcelDimensionsComparator:
+    class: InPost\Shipping\Helper\ParcelDimensionsComparator
+    public: false
+    autowire: true
+
+  inpost.shipping.handler.add_service:
+    class: InPost\Shipping\Handler\ShippingService\AddServiceHandler
+    public: true
+    autowire: true
+
+  inpost.shipping.handler.update_service:
+    class: InPost\Shipping\Handler\ShippingService\UpdateServiceHandler
+    public: true
+    autowire: true
+
+  inpost.shipping.handler.delete_service:
+    class: InPost\Shipping\Handler\ShippingService\DeleteServiceHandler
+    public: true
+    autowire: true
+
+  inpost.shipping.handler.shipment.create:
+    class: InPost\Shipping\Handler\Shipment\CreateShipmentHandler
+    public: true
+    autowire: true
+
+  inpost.shipping.handler.shipment.bulk_create:
+    class: InPost\Shipping\Handler\Shipment\BulkCreateShipmentHandler
+    public: true
+    parent: 'inpost.shipping.handler.shipment.create'
+
+  inpost.shipping.handler.dispatch_order.create:
+    class: InPost\Shipping\Handler\DispatchOrder\CreateDispatchOrderHandler
+    public: true
+    autowire: true
+
+  inpost.shipping.handler.dispatch_order.update:
+    class: InPost\Shipping\Handler\DispatchOrder\UpdateDispatchOrderHandler
+    public: true
+    autowire: true
+
+  InPost\Shipping\Builder\Shipment\CreateShipmentPayloadBuilder:
+    class: InPost\Shipping\Builder\Shipment\CreateShipmentPayloadBuilder
+    public: false
+    autowire: true
+
+  InPost\Shipping\Builder\Shipment\ParcelPayloadBuilder:
+    class: InPost\Shipping\Builder\Shipment\ParcelPayloadBuilder
+    public: false
+    autowire: true
+
+  InPost\Shipping\Builder\DispatchOrder\CreateDispatchOrderPayloadBuilder:
+    class: InPost\Shipping\Builder\DispatchOrder\CreateDispatchOrderPayloadBuilder
+    public: false
+    autowire: true
+
+  inpost.shipping.handler.shipment.print_label:
+    class: InPost\Shipping\Handler\Shipment\PrintShipmentLabelHandler
+    public: true
+    autowire: true
+
+  inpost.shipping.views.modal.dispatch_order:
+    class: InPost\Shipping\Views\Modal\CreateDispatchOrderModal
+    public: true
+    autowire: true
+
+  InPost\Shipping\Views\Modal\CreateDispatchOrderModal: '@inpost.shipping.views.modal.dispatch_order'
+
+  inpost.shipping.views.modal.shipment:
+    class: InPost\Shipping\Views\Modal\CreateShipmentModal
+    public: true
+    autowire: true
+
+  inpost.shipping.views.modal.shipment_details:
+    class: InPost\Shipping\Views\Modal\ShipmentDetailsModal
+    public: true
+    autowire: true
+
+  inpost.shipping.views.modal.print_label:
+    class: InPost\Shipping\Views\Modal\PrintShipmentLabelModal
+    public: true
+    autowire: true
+
+  inpost.shipping.views.shipment_nav_tabs:
+    class: InPost\Shipping\Views\ShipmentNavTabs
+    public: true
+    autowire: true
+
+  inpost.shipping.views.dispatch_point_nav_tabs:
+    class: InPost\Shipping\Views\DispatchPointNavTabs
+    public: true
+    autowire: true
+
+  inpost.shipping.views.modal.map:
+    class: InPost\Shipping\Views\Modal\MapModal
+    public: true
+    autowire: true
+
+  inpost.shipping.hook_updater:
+    class: InPost\Shipping\HookUpdater
+    public: true
+    autowire: true

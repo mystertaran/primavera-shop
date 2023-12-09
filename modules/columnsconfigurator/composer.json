@@ -1,0 +1,19 @@
+{
+  "name": "prestashop/belvg_columnsconfigurator",
+  "description": "PrestaShop module BelVG Columns Configurator",
+  "homepage": "https://github.com/BelVG/themecolorswitcher",
+  "license": "AFL - Academic Free License (AFL 3.0)",
+  "authors": [
+    {
+      "name": "BelVG",
+      "email": "contact@belvg.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "type": "prestashop-module"
+}

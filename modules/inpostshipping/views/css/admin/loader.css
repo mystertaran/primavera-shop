@@ -1,0 +1,83 @@
+/**
+ * Copyright 2021-2023 InPost S.A.
+ *
+ * NOTICE OF LICENSE
+ *
+ * Licensed under the EUPL-1.2 or later.
+ * You may not use this work except in compliance with the Licence.
+ *
+ * You may obtain a copy of the Licence at:
+ * https://joinup.ec.europa.eu/software/page/eupl
+ * It is also bundled with this package in the file LICENSE.txt
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the Licence is distributed on an AS IS basis,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the Licence for the specific language governing permissions
+ * and limitations under the Licence.
+ *
+ * @author    InPost S.A.
+ * @copyright 2021-2023 InPost S.A.
+ * @license   https://joinup.ec.europa.eu/software/page/eupl
+ */
+.inpost-loader-animation {
+  --block-size: 18vmin;
+  --loader-size-half: calc(var(--loader-size) / 2);
+  --loader-size-half-neg: calc(var(--loader-size-half) * -1);
+  --dot-size: 10px;
+  --dot-size-half: calc(var(--dot-size) / 2);
+  --dot-size-half-neg: calc(var(--dot-size-half) * -1);
+  --loader-size: calc(var(--block-size) / 3);
+  --anim-duration: 1.2s;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(0, 175, 240, 0.5);
+  border-radius: 50%;
+  animation: inpost-loader-animation calc(var(--anim-duration) * 3) linear infinite;
+
+  position: relative;
+  width: var(--loader-size);
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.inpost-loader-animation::before,
+.inpost-loader-animation::after {
+  content: '';
+  position: absolute;
+  width: var(--dot-size);
+  aspect-ratio: 1 / 1;
+  background: #00aff0;
+  border-radius: 50%;
+  top: var(--dot-size-half-neg);
+  left: calc(50% - var(--dot-size-half));
+  animation: inpost-loader-animation var(--anim-duration) cubic-bezier(0.27, 0.08, 0.26, 0.7) infinite;
+  transform-origin: center calc(var(--loader-size-half) + var(--dot-size-half) - 1px);
+}
+
+.inpost-loader-animation::after {
+  animation-delay: calc(var(--anim-duration) / 3 * -1);
+}
+
+@keyframes inpost-loader-animation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.inpost-loader{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1051;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.inpost-loader.active{
+  display: flex;
+}
