@@ -9779,7 +9779,7 @@ section.homeSlide .hsContainer .button:hover {
     text-decoration: none;
     text-align: left;
     font-weight: 400;
-    width: calc(100% - 160px);
+    width: calc(100% - 80px);
     display: inline-block;
     float: left;
 }
@@ -9799,7 +9799,7 @@ section.homeSlide .hsContainer .button:hover {
 
 .thumbnail-container img {
     width: 100%;
-    height: 600px;
+    height: 430px;
     object-fit: cover;
     object-position: center;
 }
