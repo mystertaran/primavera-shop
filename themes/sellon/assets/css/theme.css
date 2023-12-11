@@ -9799,7 +9799,7 @@ section.homeSlide .hsContainer .button:hover {
 
 .thumbnail-container img {
     width: 100%;
-    height: 430px;
+    height: 530px;
     object-fit: cover;
     object-position: center;
 }
@@ -13333,7 +13333,7 @@ body {
     cursor: pointer;
     width: 3.125rem;
     height: 3.125rem;
-    background: #121212
+    background: #fff
 }
 
 #header .header-nav #menu-icon .material-icons {
@@ -13446,7 +13446,7 @@ body {
 }
 
 #header .header-nav .cart-preview.active {
-    background: #121212
+    background: #fff
 }
 
 #header .header-nav .cart-preview.active a,
@@ -13905,7 +13905,7 @@ body {
     }
 
     #header .header-nav #menu-icon .material-icons {
-        color: #fff
+        color: #121212
     }
 
     #header .header-nav .logo {
@@ -13960,7 +13960,7 @@ body {
     }
 
     #header .header-nav .blockcart svg {
-        fill: #fff
+        fill: #121212
     }
 
     #header .header-nav .blockcart i {
@@ -13973,7 +13973,7 @@ body {
     }
 
     #header .header-nav .blockcart.inactive .cart-products-count {
-        color: #fff
+        color: #121212
     }
 
     #header .header-top {
