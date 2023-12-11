@@ -13451,7 +13451,7 @@ body {
 
 #header .header-nav .cart-preview.active a,
 #header .header-nav .cart-preview.active i {
-    color: #fff
+    color: #121212
 }
 
 #header .header-nav .cart-preview .shopping-cart {
@@ -13481,7 +13481,7 @@ body {
 }
 
 #header .header-nav .blockcart.active a:hover {
-    color: #fff
+    color: #121212
 }
 
 #header .header-nav .blockcart .header {
@@ -13952,7 +13952,7 @@ body {
 
     #header .header-nav .blockcart {
         margin-left: .5rem;
-        background: #121212
+        background: #fff
     }
 
     #header .header-nav .blockcart a {
@@ -14607,5 +14607,6 @@ body {
     object-fit: cover;
     max-height: 746px;
 }
+
 
 /*# sourceMappingURL=theme.css.map*/

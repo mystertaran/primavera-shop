@@ -26,6 +26,12 @@
   border-radius: 5px;
 }
 
+@media (min-width: 768px) {
+  #search_widget form i {
+    top: -33px;
+    left: -27px;
+  }
+}
 
 .ui-autocomplete.searchbar-autocomplete {
   width: 100%;
