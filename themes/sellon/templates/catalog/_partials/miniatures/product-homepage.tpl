@@ -119,7 +119,7 @@
         </a>
       </div>
 
-
+{*
       <div class="highlighted-informations{if !$product.main_variants} no-variants{/if}">
         {block name='quick_view'}
         <div class="quick-view-wrap hidden-sm-down">
@@ -127,7 +127,7 @@
             <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
           </a>
         </div>
-        {/block}
+        {/block} *}
 
         {block name='product_availability'}
         {if $product.show_availability}
