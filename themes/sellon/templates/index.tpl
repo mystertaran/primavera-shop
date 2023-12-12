@@ -102,7 +102,7 @@
       <div class="about-us-image-column">
         <img src="http://primavera.sklep.pl/themes/sellon/assets/img/about-us.jpg" alt="Zdjęcie o nas">
       </div>
-    </div> *}
-    {/block}
+    </div> 
+    {/block}*}
   </section>
   {/block}
