@@ -10125,6 +10125,7 @@ section.homeSlide .hsContainer .button:hover {
 }
 
 @media (max-width: 768px) {
+
     #products .product-miniature .discount,
     #products .product-miniature .on-sale,
     #products .product-miniature .online-only,
@@ -14566,15 +14567,18 @@ body {
 
 .about-us-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 200px;
+    margin: auto;
     position: relative;
     width: 100%;
+    max-width: 1200px;
     padding: 20px;
 }
 
 .about-us-text-column {
+    flex: 1 0 50%;
     width: 30%;
     float: left;
     margin-right: -30px;
@@ -14598,14 +14602,33 @@ body {
 }
 
 .about-us-image-column {
-    width: 40%;
-    float: left;
+    flex: 1 0 50%;
+    overflow: hidden;
 }
 
 .about-us-image-column img {
     width: auto;
     object-fit: cover;
     max-height: 746px;
+}
+
+@media (max-width: 767px) {
+
+    .about-us-text-column,
+    .about-us-image-column {
+        flex: 1 0 100%;
+    }
+
+    .about-us-image-column {
+        order: 1;
+    }
+
+    .about-us-text-column {
+        order: 2;
+        position: relative;
+        margin-right: 0;
+        margin-top: -20px;
+    }
 }
 
 

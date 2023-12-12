@@ -137,11 +137,11 @@
 	    {/if}
 	{/block}      
 
-      {block name='product_variants'}
+{*     {block name='product_variants'}
         {if $product.main_variants}
           {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
         {/if}
-      {/block}
+      {/block} *}
       
     </div>
 
