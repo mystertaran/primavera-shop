@@ -1,0 +1,7 @@
+.st_attr_list_item{margin-bottom: 2px;}
+.st_attr_list_text_center{text-align: center;}
+.product_list.list .st_attr_list_text_center{text-align: left;}
+.st_attr_list_item strong, 
+.st_attr_list_swatch, 
+.st_attr_list_text{margin-right: 4px;margin-top: 3px;margin-bottom: 3px;display: inline-block;}
+.st_attr_list_swatch{width:1.25rem;height:1.25rem;border:1px solid rgba(0,0,0,.05);background-size:contain;vertical-align:middle;}
