@@ -32,7 +32,7 @@
   <nav class="header-nav">
   <div class="additional-header">
   <div class="contact-info">
-    <a href="#" class="write-to-us">Napisz do nas</a>
+    <a href="https://primavera.sklep.pl/kontakt" class="write-to-us">Napisz do nas</a>
     <a href="tel:+48696023073" class="phone">+48 696 023 073</a>
     <span class="opening-hours">Pon - Pt: 9:00 - 17:30, Sob: 9:00 - 13:00</span>
   </div>

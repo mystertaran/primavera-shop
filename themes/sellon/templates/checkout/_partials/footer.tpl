@@ -45,8 +45,8 @@
     <div class="row copyright">
       <div class="col-md-12">
           {block name='copyright_link'}
-            <a class="_blank" href="http://www.prestashop.com" target="_blank">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme'}
+            <a class="_blank" href="https://sdconcept.pl" target="_blank">
+              {l s='%copyright% %year% - Sklep Primavera. Wykonanie: %prestashop%' sprintf=['%prestashop%' => 'SDConcept', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme'}
             </a>
           {/block}
       </div>
