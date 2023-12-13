@@ -1,5 +1,7 @@
 .st_attr_list_item {
     margin-bottom: 2px;
+    display: inline-block;
+    float: left;
 }
 
 .st_attr_list_text_center {

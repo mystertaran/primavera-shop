@@ -14655,21 +14655,4 @@ body {
     }
 }
 
-.st_attr_list_text {
-    border: 1px solid #121212;
-    margin: 10px!important  ;
-    padding: 5px 8px;
-    font-size: 0.875rem !important;
-}
-
-@media (max-width: 767px) {
-
-    .st_attr_list_container {
-        text-align: left !important;
-    }
-    .st_attr_list_text {
-        margin: 4px 4px 4px 0px!important;
-        text-align: left !important;
-    }
-}
 /*# sourceMappingURL=theme.css.map*/
