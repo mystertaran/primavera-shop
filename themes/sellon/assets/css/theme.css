@@ -1373,7 +1373,7 @@ pre code {
 
     .col-md-5 {
         float: left;
-        width: 41.66667%
+        width: 22%
     }
 
     .col-md-6 {
@@ -12937,6 +12937,10 @@ section.homeSlide .hsContainer .button:hover {
     padding-left: 3rem;
     color: #878787
 }
+.payments-container {
+    padding-left: 3rem;
+    color: #878787
+}
 
 .block-contact .block-contact-title {
     color: #333;
@@ -14654,5 +14658,22 @@ body {
         margin-top: -20px;
     }
 }
+
+.payments-info__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .payments-info__item {
+    text-align: center;
+    margin: 10px; 
+  }
+  
+  .payments-info__item img {
+    max-width: 100%;
+    height: auto;
+  }
 
 /*# sourceMappingURL=theme.css.map*/

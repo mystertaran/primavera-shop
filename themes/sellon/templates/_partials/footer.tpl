@@ -35,6 +35,28 @@
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}
+      <div class="contact-info-wrap col-md-5 col-sm-12">
+        {block name='payments_method'}
+        <div class="block-contact links wrapper">
+          <div class="hidden-sm-down">
+            <div class="payments-container links wrapper">
+              <h4 class="text-uppercase block-contact-title">Metody płatności:</h4>
+              <div class="payments-info__content">
+                <div class="payments-info__item">
+                  <img src="https://primavera.sklep.pl/themes/sellon/assets/img/payments/p24now.png" alt="P24Now" />
+                </div>
+                <div class="payments-info__item">
+                  <img src="https://primavera.sklep.pl/themes/sellon/assets/img/payments/paypo.png" alt="PayPo" />
+                </div>
+                <div class="payments-info__item">
+                  <img src="https://primavera.sklep.pl/themes/sellon/assets/img/payments/przelewy24.png" alt="Przelewy24" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/block}
+      </div>
 	  <div class="contact-info-wrap col-md-5 col-sm-12">
       {block name='hook_footer_after'}
         {hook h='displayFooterAfter'}
