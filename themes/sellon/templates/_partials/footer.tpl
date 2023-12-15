@@ -43,7 +43,7 @@
               <h4 class="text-uppercase block-contact-title">Metody płatności:</h4>
               <div class="payments-info__content">
                 <div class="payments-info__item">
-                  <img src="https://primavera.sklep.pl/themes/sellon/assets/img/payments/p24now.png" alt="P24Now" />
+                  <img src="https://primavera.sklep.pl/themes/sellon/assets/img/payments/p24nowa.png" alt="P24Now" />
                 </div>
                 <div class="payments-info__item">
                   <img src="https://primavera.sklep.pl/themes/sellon/assets/img/payments/paypo.png" alt="PayPo" />
