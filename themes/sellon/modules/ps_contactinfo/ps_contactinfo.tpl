@@ -24,7 +24,7 @@
 *}
 
 <div class="block-contact links wrapper">
-  <div class="hidden-sm-down">
+  {*<div class="hidden-sm-down">*}
     <h4 class="text-uppercase block-contact-title">{l s='Informacje o sklepie' d='Shop.Theme'}</h4>
     <div class="block-contact-text">
 	    <i class="material-icons">&#xE55F;</i>
@@ -78,62 +78,10 @@
           </span>
       {/if}
     </div>
-  </div>
-  <div class="hidden-md-up">
+  {*</div>*}
+  {*<div class="hidden-md-up">
     <div class="title">
-      <a class="h3" href="https://primavera.sklep.pl/kontakt" style="margin-bottom: 10px">{l s='Informacje o sklepie' d='Shop.Theme'}</a>
-      <div class="block-contact-text">
-	    <i class="material-icons">&#xE55F;</i>
-	    <span>
-      {$contact_infos.address.formatted nofilter}
-	    </span>
-      {if $contact_infos.phone}
-        <br>
-        {* [1][/1] is for a HTML tag. *}
-        <i class="material-icons">&#xE0B0;</i>
-        <span>
-        {l s='Telefon: [1]%phone%[/1]'
-          sprintf=[
-          '[1]' => '<span>',
-          '[/1]' => '</span>',
-          '%phone%' => $contact_infos.phone
-          ]
-          d='Shop.Theme'
-        }
-        </span>
-      {/if}
-      {if $contact_infos.fax}
-        <br>
-        {* [1][/1] is for a HTML tag. *}
-        <span>
-        {l
-          s='Fax: [1]%fax%[/1]'
-          sprintf=[
-            '[1]' => '<span>',
-            '[/1]' => '</span>',
-            '%fax%' => $contact_infos.fax
-          ]
-          d='Shop.Theme'
-        }
-        </span>
-      {/if}
-      {if $contact_infos.email}
-        <br>
-        <i class="material-icons">&#xE0BE;</i>
-        {* [1][/1] is for a HTML tag. *}
-          <span>
-        {l
-          s='Email: [1]%email%[/1]'
-          sprintf=[
-            '[1]' => '<span>',
-            '[/1]' => '</span>',
-            '%email%' => $contact_infos.email
-          ]
-          d='Shop.Theme'
-        }
-          </span>
-      {/if}
+      <a class="h3" href="{$urls.pages.stores}">{l s='Informacje o sklepie' d='Shop.Theme'}</a>
     </div>
-    </div>
-  </div>
+  </div>*}
 </div>

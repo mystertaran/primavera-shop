@@ -12937,9 +12937,17 @@ section.homeSlide .hsContainer .button:hover {
     padding-left: 3rem;
     color: #878787
 }
+
 .payments-container {
     padding-left: 3rem;
-    color: #878787
+    color: #878787;
+    border-left: 1px solid #ebebeb;
+}
+
+@media (max-width: 768px) {
+    .payments-container {
+        border-left: none;
+    }
 }
 
 .block-contact .block-contact-title {
@@ -13886,6 +13894,12 @@ body {
     padding-bottom: .9375rem
 }
 
+@media (max-width: 767px) {
+    #footer h4 {
+        margin-top: 20px;
+    }
+}
+
 #scroll-top {
     position: fixed;
     bottom: -80px;
@@ -14664,16 +14678,39 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-  
-  .payments-info__item {
-    text-align: center;
-    margin: 10px; 
-  }
-  
-  .payments-info__item img {
-    max-width: 100%;
+}
+
+.payments-info__item {
+    margin: 10px;
+}
+
+.payments-info__item_p24now {
+    margin-bottom: 15px;
+}
+
+.payments-info__item img {
+    max-width: 55%;
     height: auto;
-  }
+}
+
+.payments-info__item_p24now img {
+    max-width: 55%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .payments-info__content {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+    .payments-info__item img {
+        max-width: 40%;
+        height: auto;
+    }
+    .payments-info__item_p24now img {
+        max-width: 40%;
+        height: auto;
+    }
+}
 
 /*# sourceMappingURL=theme.css.map*/
